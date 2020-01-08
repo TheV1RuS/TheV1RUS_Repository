@@ -1,3 +1,5 @@
+// Программа решающая квадратное уравнение
+
 #include <iostream>
 #include <math.h>
 using namespace std;
