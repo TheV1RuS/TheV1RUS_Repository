@@ -1,3 +1,6 @@
+// Программа для решения линецного уравнения
+
+
 #include <iostream>
 using namespace std;
 int main()
