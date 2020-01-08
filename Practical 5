@@ -1,0 +1,49 @@
+// Создает два массива и копирует туда числа больше 10
+
+
+#include <iostream>
+#include <conio.h>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+int main()
+{
+ int mas1[12], mas2[12];
+ int* mas3;
+ int q, s = 0;
+ srand(time(NULL));
+ for (q = 0;q < 12;q++)
+  {
+   mas1[q] = rand()%25;
+   mas2[q] = rand()%25;
+   if (mas1[q] > 10);
+   if (mas2[q] > 10);
+  }
+  mas3 = new int[s];
+  int f = 0;
+  cout << "Array 1: ";
+  for (q = 0;q < 12;q++)
+  {
+   cout << mas1[q] << " " ;
+   if (mas1[q] > 10)
+   {
+    mas3[f] = mas1[q];
+    f++;
+   }
+  }
+ cout << "\nArray 2: ";
+ for (q = 0;q < 12;q++)
+  {
+   cout << mas2[q] << " ";
+   if (mas2[q] > 10)
+    {
+     mas3[f] = mas2[q];
+     f++;
+    }
+  }
+ cout << "\n\nGeneral array: ";
+ for (q = 0;q < f;q++)
+ cout << mas3[q] << " " ;
+ _getch();
+}
+
