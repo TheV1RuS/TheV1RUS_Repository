@@ -1,0 +1,28 @@
+// Написать программу которая будет n раз считывать символ и в зависимости от него выполнять следующие действия:
+“a” – вывести “message 1”
+“n” – вывести номер обрабатываемого символа, введение данного символа не засчитывается в общий счётчик символов.
+“с” – считать символ и ввыести его 3 раза через “,”
+Все остальные символы – вывести “unknown command”
+N считывать при запуске //
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+ int N;
+ char symbol;
+ cout << "Enter the number of characters, N=";
+ cin >> N;
+ for (int i = 1;i <= N; i++)
+  {
+   cin >> symbol;  
+   if (symbol == 'a') cout << "Message 1" << endl;
+   else if (symbol == 'n')
+   cout << "Nomer: " << --i << endl;
+   else if (symbol == 'c')
+   cout << N << "," << N << "," << N << endl;
+   else cout << "Unknown command" << endl;
+  }
+ system("pause");
+}
